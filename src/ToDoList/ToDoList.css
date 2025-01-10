@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Dongle&display=swap');
+*{
+    background-color: #2C1532  ;
+}
+
+.to-do-list{
+    font-family: 'Darumadrop One', Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+   
+}
+
+h1{
+    font-size: 4rem;
+    color: #fff;
+}
+button{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 4 rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #2C1532;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    
+}
+
+.add-button{
+    background-color: #E8EF9C;
+    height: 50px;
+    padding-bottom: 55px;
+    width: fit-content;
+    font-size: 2rem;
+    
+  
+}
+.add-button:hover{
+   
+    background-color: #BEC570;  
+}
+
+.delete-button{
+    background-color: hsl(10, 47%, 50%);
+  
+}
+.delete-button:hover{
+   
+    background-color: hsl(10, 47%, 40%);  
+}
+.move-button{
+    background-color: #E8EF9C;
+  
+}
+.move-button:hover{
+   
+    background-color: #BEC570; 
+}
+
+input[type="text"]{
+    font-family: 'Dongle', Arial, sans-serif;
+    font-size: 2rem;
+    padding: 7px;
+    border: 2px solid #E8EF9C;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 97%);
+
+}
+ol{
+    padding: 0%;
+}
+li{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: hsl(0, 0%, 97%);
+    margin-bottom: 10px;
+    border: 3px solid #E8EF9C;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+.text{
+    flex: 1;
+    
+    background-color: hsl(0, 0%, 97%);
+    
+
+}
+.delete-button , .move-button{
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+
+}
