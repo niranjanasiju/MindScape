@@ -65,10 +65,10 @@ const ToDoList = () => {
                                     onClick={() => deleteTask(index)}>Delete</button>
                                 <button
                                     className='move-button'
-                                    onClick={() => moveTaskup(index)}>🔼</button>
+                                    onClick={() => moveTaskup(index)}>▲</button>
                                 <button
                                     className='move-button'
-                                    onClick={() => moveTaskdown(index)}>🔽</button>
+                                    onClick={() => moveTaskdown(index)}>▼</button>
                             </li>
                         )}
                     </ol>
