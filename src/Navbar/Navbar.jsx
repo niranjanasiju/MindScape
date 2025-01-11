@@ -9,7 +9,7 @@ export default function Navbar() {
       
           <ul >
           <CustomLink to="/landing"><img className="logo" src="./logo.png" alt="logo"></img></CustomLink> {/* Match the route path */}
-        <CustomLink to="/login">Diary</CustomLink>
+        <CustomLink to="/diary">Diary</CustomLink>
         <CustomLink to="/todo">To-Do List</CustomLink>     
         <CustomLink to="/pomodoro">Pomodoro App</CustomLink>  
         

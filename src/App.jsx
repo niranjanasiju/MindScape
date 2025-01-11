@@ -7,6 +7,7 @@ import LoginPage from "./LoginPage";
 import AudioToText from '../src/AudioToText'
 
 import PomodoroPage from "./Pomodoro";
+import Diary from "./Diary/Diary";
 function App() {
   return (
     <BrowserRouter>
@@ -19,7 +20,7 @@ function App() {
           <Route path="/todo" element={<ToDoList />} />
           <Route path="/pomodoro" element={<PomodoroPage />} />
           <Route path="/recordaudio" element={<AudioToText/>} />
-          
+          <Route path="/diary" element={<Diary/>} />
         </Routes>
       </div>
     </BrowserRouter>

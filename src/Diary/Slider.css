@@ -4,11 +4,7 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-  }
+ 
   
   .section {
     text-align: center;
@@ -31,7 +27,7 @@
     transform: translateX(100%);
     transition: all 0.5s ease-in-out;
     background-color: #fff8dc; /* Pale yellow background */
-    color: #000; /* Text color is now black */
+    color: #ffffff; /* Text color is now black */
     padding: 12rem;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
