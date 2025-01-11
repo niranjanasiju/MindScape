@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .section {
+    text-align: center;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 29rem;
+  }
+  
+  article {
+    flex: 0 0 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    background-color: #fff8dc; /* Pale yellow background */
+    color: #000; /* Text color is now black */
+    padding: 12rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute; /* Fix to keep slides stacked */
+    width: 100%; /* Ensures all slides take up full space */
+  }
+  
+  .activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative; /* Makes the active slide visible */
+    z-index: 1; /* Ensures active slide is on top */
+  }
+  
+  .lastSlide {
+    transform: translateX(-100%);
+  }
+  
+  .nextSlide {
+    transform: translateX(100%);
+  }
+  
+  .title h2 {
+    color: aliceblue;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  button.prev {
+    left: 0.5rem;
+    margin-top: 2.2rem;
+    
+    
+  }
+  
+  button.next {
+    right: 0.5rem;
+  }
+  
+  button.read{
+    position: absolute;
+    top: 90px; /* 50px from the top of the container */
+    left: 50px;
+    width: fit-content;
+  }
+  
