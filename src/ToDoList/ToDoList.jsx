@@ -58,7 +58,7 @@ const ToDoList = () => {
                 <div>
                     <ol>
                         {tasks.map((task, index) =>
-                            <li key={index}>
+                            <li className='list' key={index}>
                                 <span className='text'>{task}</span>
                                 <button
                                     className='delete-button'

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
   }
   
   body {
@@ -8,14 +9,12 @@
   
 
   
-  .container img{
+ img{
     width: 20px;
-    display: flex;
-    justify-content:;
-  }
+ }
   
   .nav {
-   
+    border: none;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -26,6 +25,7 @@
   
   .site-title {
     font-size: 2rem;
+    border: none;
   }
   
   .nav ul {

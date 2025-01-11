@@ -7,8 +7,8 @@ export default function Navbar() {
      
         
       
-          <ul className="container">
-          <CustomLink to="/landing"><img src="./logo.png" alt="logo"></img></CustomLink> {/* Match the route path */}
+          <ul >
+          <CustomLink to="/landing"><img className="logo" src="./logo.png" alt="logo"></img></CustomLink> {/* Match the route path */}
         <CustomLink to="/">Login</CustomLink>
         <CustomLink to="/tasks">Tasks</CustomLink>     
           </ul>
@@ -20,11 +20,13 @@ function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
-  return (
+    return (
+      <div className="list">
     <li className={isActive ? "active" : ""}>
       <Link to={to} {...props}>
         {children}
       </Link>
-    </li>
+            </li>
+            </div>
   );
 }
