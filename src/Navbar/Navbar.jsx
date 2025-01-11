@@ -9,8 +9,8 @@ export default function Navbar() {
       
           <ul >
           <CustomLink to="/landing"><img className="logo" src="./logo.png" alt="logo"></img></CustomLink> {/* Match the route path */}
-        <CustomLink to="/">Login</CustomLink>
-        <CustomLink to="/tasks">Tasks</CustomLink>     
+        <CustomLink to="/">LOGIN</CustomLink>
+        <CustomLink to="/tasks">TASKS</CustomLink>     
           </ul>
     </nav>
   );
